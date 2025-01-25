@@ -1,91 +1,46 @@
-.calendar-container {
-  display: grid;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.calendar-cell {
+.calendar-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.green {
-  background-color: green;
-  color: white;
-}
-
-.red {
-  background-color: red;
-  color: white;
-}
-
-.gray {
-  background-color: lightgray;
-}
-
-.empty {
-  background-color: transparent;
-  border: none;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
 }
 
 .calendar-row {
   display: flex;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
+}
+
+.calendar-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: center;
+  width: 50px;
+  font-size: 14px;
 }
 
 .header {
   font-weight: bold;
-  text-align: center;
-  font-size: 16px;
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
 }
 
-.day-box {
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 4px;
-  font-size: 16px;
-  text-align: center;
+.user-name {
+  text-transform: capitalize;
 }
 
 .day-number {
-  font-size: 16px;
   font-weight: bold;
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+.day-name {
+  font-style: italic;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-
-button:focus {
-  outline: none;
-}
-
-.reset-button {
-  background-color: red;
+/* Colors for attendance */
+.present {
+  background-color: green;
   color: white;
 }
 
-.update-button {
-  background-color: green;
+.absent {
+  background-color: red;
   color: white;
 }

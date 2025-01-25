@@ -1,0 +1,91 @@
+.calendar-container {
+  display: grid;
+  /* gap: 10px; */
+  margin-top: 20px;
+}
+
+.calendar-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 60px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar-row {
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.day-box {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.day-number {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+.reset-button {
+  background-color: red;
+  color: white;
+}
+
+.update-button {
+  background-color: green;
+  color: white;
+}
